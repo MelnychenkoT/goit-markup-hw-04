@@ -158,22 +158,23 @@ ul {
 
 .main-text {
   background: #2e2f42;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-main.png);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
 }
 
 .main-text-title {
