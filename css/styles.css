@@ -60,6 +60,7 @@ ul {
 
 .header-menu-link.current {
   position: relative;
+  color: #404bbf;
 }
 
 .header-menu-link.current::after {
@@ -73,7 +74,8 @@ ul {
   background-color: #404bbf;
   border-radius: 2px;
 }
-*/ .logo {
+
+.logo {
   padding: 24px 0;
 }
 
@@ -159,7 +161,6 @@ ul {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
-      to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -326,15 +327,13 @@ ul {
 
 .team-social {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .card-icons {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
-  background-color: #4d5ae5;
 }
 
 .social-link {
@@ -343,10 +342,18 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
 }
 
 .social-icons {
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 .portfolio-title {
   font-size: 36px;
@@ -377,25 +384,18 @@ ul {
 .overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   background: #4d5ae5;
-}
-
-.overlay-text {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  padding-left: 32px;
-  padding-top: 40px;
-  padding-right: 32px;
 }
 
 .portfolio-item:hover .overlay {
@@ -442,6 +442,7 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-block {
@@ -498,6 +499,26 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
+.footer-social-icons {
+  fill: #f4f4fd;
 }
 .footer-team-social {
   display: flex;
